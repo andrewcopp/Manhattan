@@ -7,17 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		571246D21BAE5B6D00661925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571246D11BAE5B6D00661925 /* AppDelegate.swift */; };
-		571246D51BAE5B6D00661925 /* Manhattan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 571246D31BAE5B6D00661925 /* Manhattan.xcdatamodeld */; };
-		571246D71BAE5B6D00661925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571246D61BAE5B6D00661925 /* ViewController.swift */; };
 		571246DA1BAE5B6D00661925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571246D81BAE5B6D00661925 /* Main.storyboard */; };
 		571246DC1BAE5B6D00661925 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571246DB1BAE5B6D00661925 /* Images.xcassets */; };
 		571246DF1BAE5B6D00661925 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571246DD1BAE5B6D00661925 /* LaunchScreen.xib */; };
 		571246EB1BAE5B6D00661925 /* ManhattanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571246EA1BAE5B6D00661925 /* ManhattanTests.swift */; };
+		5712474B1BAE61FD00661925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571246F61BAE61FD00661925 /* AppDelegate.swift */; };
+		5712474C1BAE61FD00661925 /* Manhattan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 571246FA1BAE61FD00661925 /* Manhattan.xcdatamodeld */; };
+		571247611BAE6D0900661925 /* AuthenticateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571247601BAE6D0900661925 /* AuthenticateViewController.swift */; };
+		575161F71BD9164C001D6017 /* ManhattanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575161F61BD9164C001D6017 /* ManhattanUITests.swift */; };
+		575161FF1BD927A4001D6017 /* AuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575161FE1BD927A4001D6017 /* AuthenticateView.swift */; };
+		575162221BD94C57001D6017 /* AuthenticatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575162211BD94C57001D6017 /* AuthenticatePresenter.swift */; };
+		575162241BD94C71001D6017 /* AuthenticateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575162231BD94C71001D6017 /* AuthenticateInteractor.swift */; };
+		575162261BD94FBC001D6017 /* AuthenticateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575162251BD94FBC001D6017 /* AuthenticateDataManager.swift */; };
+		575162281BD952EC001D6017 /* AuthenticateModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575162271BD952EC001D6017 /* AuthenticateModuleInterface.swift */; };
+		5751622A1BD95353001D6017 /* AuthenticateWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575162291BD95353001D6017 /* AuthenticateWireframe.swift */; };
+		5751622C1BD957C8001D6017 /* AuthenticateInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751622B1BD957C8001D6017 /* AuthenticateInteractorIO.swift */; };
+		5751622E1BD96197001D6017 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751622D1BD96197001D6017 /* AppDependencies.swift */; };
+		575162301BD961D2001D6017 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5751622F1BD961D2001D6017 /* RootWireframe.swift */; };
+		575162351BD9691A001D6017 /* FacebookOptionalPermissions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 575162341BD9691A001D6017 /* FacebookOptionalPermissions.plist */; };
+		575162371BD9693F001D6017 /* FacebookRequiredPermissions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 575162361BD9693F001D6017 /* FacebookRequiredPermissions.plist */; };
+		5751623A1BD98B72001D6017 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575162381BD98B72001D6017 /* FBSDKCoreKit.framework */; };
+		5751623B1BD98B72001D6017 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575162391BD98B72001D6017 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		571246E51BAE5B6D00661925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 571246C41BAE5B6D00661925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 571246CB1BAE5B6D00661925;
+			remoteInfo = Manhattan;
+		};
+		575161F91BD9164C001D6017 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 571246C41BAE5B6D00661925 /* Project object */;
 			proxyType = 1;
@@ -29,15 +50,31 @@
 /* Begin PBXFileReference section */
 		571246CC1BAE5B6D00661925 /* Manhattan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manhattan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571246D01BAE5B6D00661925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		571246D11BAE5B6D00661925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		571246D41BAE5B6D00661925 /* Manhattan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Manhattan.xcdatamodel; sourceTree = "<group>"; };
-		571246D61BAE5B6D00661925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		571246D91BAE5B6D00661925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		571246DB1BAE5B6D00661925 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		571246DE1BAE5B6D00661925 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		571246E41BAE5B6D00661925 /* ManhattanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManhattanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571246E91BAE5B6D00661925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571246EA1BAE5B6D00661925 /* ManhattanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManhattanTests.swift; sourceTree = "<group>"; };
+		571246F61BAE61FD00661925 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		571246FB1BAE61FD00661925 /* Manhattan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Manhattan.xcdatamodel; sourceTree = "<group>"; };
+		571247601BAE6D0900661925 /* AuthenticateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateViewController.swift; sourceTree = "<group>"; };
+		575161F41BD9164C001D6017 /* ManhattanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManhattanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575161F61BD9164C001D6017 /* ManhattanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManhattanUITests.swift; sourceTree = "<group>"; };
+		575161F81BD9164C001D6017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575161FE1BD927A4001D6017 /* AuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateView.swift; sourceTree = "<group>"; };
+		575162211BD94C57001D6017 /* AuthenticatePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatePresenter.swift; sourceTree = "<group>"; };
+		575162231BD94C71001D6017 /* AuthenticateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateInteractor.swift; sourceTree = "<group>"; };
+		575162251BD94FBC001D6017 /* AuthenticateDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateDataManager.swift; sourceTree = "<group>"; };
+		575162271BD952EC001D6017 /* AuthenticateModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateModuleInterface.swift; sourceTree = "<group>"; };
+		575162291BD95353001D6017 /* AuthenticateWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateWireframe.swift; sourceTree = "<group>"; };
+		5751622B1BD957C8001D6017 /* AuthenticateInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateInteractorIO.swift; sourceTree = "<group>"; };
+		5751622D1BD96197001D6017 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		5751622F1BD961D2001D6017 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		575162341BD9691A001D6017 /* FacebookOptionalPermissions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FacebookOptionalPermissions.plist; sourceTree = "<group>"; };
+		575162361BD9693F001D6017 /* FacebookRequiredPermissions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FacebookRequiredPermissions.plist; sourceTree = "<group>"; };
+		575162381BD98B72001D6017 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		575162391BD98B72001D6017 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,10 +82,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5751623B1BD98B72001D6017 /* FBSDKLoginKit.framework in Frameworks */,
+				5751623A1BD98B72001D6017 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		571246E11BAE5B6D00661925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575161F11BD9164C001D6017 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +109,7 @@
 			children = (
 				571246CE1BAE5B6D00661925 /* Manhattan */,
 				571246E71BAE5B6D00661925 /* ManhattanTests */,
+				575161F51BD9164C001D6017 /* ManhattanUITests */,
 				571246CD1BAE5B6D00661925 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +119,7 @@
 			children = (
 				571246CC1BAE5B6D00661925 /* Manhattan.app */,
 				571246E41BAE5B6D00661925 /* ManhattanTests.xctest */,
+				575161F41BD9164C001D6017 /* ManhattanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,12 +127,9 @@
 		571246CE1BAE5B6D00661925 /* Manhattan */ = {
 			isa = PBXGroup;
 			children = (
-				571246D11BAE5B6D00661925 /* AppDelegate.swift */,
-				571246D61BAE5B6D00661925 /* ViewController.swift */,
-				571246D81BAE5B6D00661925 /* Main.storyboard */,
-				571246DB1BAE5B6D00661925 /* Images.xcassets */,
-				571246DD1BAE5B6D00661925 /* LaunchScreen.xib */,
-				571246D31BAE5B6D00661925 /* Manhattan.xcdatamodeld */,
+				571246F51BAE61FD00661925 /* Classes */,
+				571246F41BAE5F9900661925 /* Resources */,
+				571247591BAE6B4900661925 /* Frameworks */,
 				571246CF1BAE5B6D00661925 /* Supporting Files */,
 			);
 			path = Manhattan;
@@ -113,6 +158,719 @@
 				571246E91BAE5B6D00661925 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		571246F41BAE5F9900661925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				571246D81BAE5B6D00661925 /* Main.storyboard */,
+				571246DB1BAE5B6D00661925 /* Images.xcassets */,
+				571246DD1BAE5B6D00661925 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		571246F51BAE61FD00661925 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				571246F71BAE61FD00661925 /* Common */,
+				571246FD1BAE61FD00661925 /* Features */,
+				571246F61BAE61FD00661925 /* AppDelegate.swift */,
+				5751622D1BD96197001D6017 /* AppDependencies.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		571246F71BAE61FD00661925 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				575162311BD968DD001D6017 /* Facebook */,
+				571246F81BAE61FD00661925 /* Store */,
+				571246FC1BAE61FD00661925 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		571246F81BAE61FD00661925 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				571246F91BAE61FD00661925 /* Entities */,
+				571246FA1BAE61FD00661925 /* Manhattan.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		571246F91BAE61FD00661925 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		571246FC1BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5751622F1BD961D2001D6017 /* RootWireframe.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571246FD1BAE61FD00661925 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				571246FE1BAE61FD00661925 /* Authenticate */,
+				571247091BAE61FD00661925 /* Converse */,
+				571247141BAE61FD00661925 /* Edit */,
+				5712471F1BAE61FD00661925 /* List */,
+				5712472A1BAE61FD00661925 /* Onboard */,
+				571247351BAE61FD00661925 /* Rate */,
+				571247401BAE61FD00661925 /* View */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		571246FE1BAE61FD00661925 /* Authenticate */ = {
+			isa = PBXGroup;
+			children = (
+				571246FF1BAE61FD00661925 /* Application Logic */,
+				571247031BAE61FD00661925 /* Module Interface */,
+				571247041BAE61FD00661925 /* User Interface */,
+			);
+			path = Authenticate;
+			sourceTree = "<group>";
+		};
+		571246FF1BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				571247001BAE61FD00661925 /* Interactor */,
+				571247011BAE61FD00661925 /* Manager */,
+				571247021BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		571247001BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				575162231BD94C71001D6017 /* AuthenticateInteractor.swift */,
+				5751622B1BD957C8001D6017 /* AuthenticateInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		571247011BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				575162251BD94FBC001D6017 /* AuthenticateDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571247021BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		571247031BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				575162271BD952EC001D6017 /* AuthenticateModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		571247041BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				571247051BAE61FD00661925 /* Presenter */,
+				571247061BAE61FD00661925 /* Transition */,
+				571247071BAE61FD00661925 /* View */,
+				571247081BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		571247051BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				575162211BD94C57001D6017 /* AuthenticatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		571247061BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		571247071BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				571247601BAE6D0900661925 /* AuthenticateViewController.swift */,
+				575161FE1BD927A4001D6017 /* AuthenticateView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571247081BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				575162291BD95353001D6017 /* AuthenticateWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		571247091BAE61FD00661925 /* Converse */ = {
+			isa = PBXGroup;
+			children = (
+				5712470A1BAE61FD00661925 /* Application Logic */,
+				5712470E1BAE61FD00661925 /* Module Interface */,
+				5712470F1BAE61FD00661925 /* User Interface */,
+			);
+			path = Converse;
+			sourceTree = "<group>";
+		};
+		5712470A1BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5712470B1BAE61FD00661925 /* Interactor */,
+				5712470C1BAE61FD00661925 /* Manager */,
+				5712470D1BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		5712470B1BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5712470C1BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5712470D1BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5712470E1BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		5712470F1BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				571247101BAE61FD00661925 /* Presenter */,
+				571247111BAE61FD00661925 /* Transition */,
+				571247121BAE61FD00661925 /* View */,
+				571247131BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		571247101BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		571247111BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		571247121BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571247131BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		571247141BAE61FD00661925 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				571247151BAE61FD00661925 /* Application Logic */,
+				571247191BAE61FD00661925 /* Module Interface */,
+				5712471A1BAE61FD00661925 /* User Interface */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		571247151BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				571247161BAE61FD00661925 /* Interactor */,
+				571247171BAE61FD00661925 /* Manager */,
+				571247181BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		571247161BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		571247171BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571247181BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		571247191BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		5712471A1BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5712471B1BAE61FD00661925 /* Presenter */,
+				5712471C1BAE61FD00661925 /* Transition */,
+				5712471D1BAE61FD00661925 /* View */,
+				5712471E1BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		5712471B1BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5712471C1BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		5712471D1BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5712471E1BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		5712471F1BAE61FD00661925 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				571247201BAE61FD00661925 /* Application Logic */,
+				571247241BAE61FD00661925 /* Module Interface */,
+				571247251BAE61FD00661925 /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		571247201BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				571247211BAE61FD00661925 /* Interactor */,
+				571247221BAE61FD00661925 /* Manager */,
+				571247231BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		571247211BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		571247221BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571247231BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		571247241BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		571247251BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				571247261BAE61FD00661925 /* Presenter */,
+				571247271BAE61FD00661925 /* Transition */,
+				571247281BAE61FD00661925 /* View */,
+				571247291BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		571247261BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		571247271BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		571247281BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571247291BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		5712472A1BAE61FD00661925 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				5712472B1BAE61FD00661925 /* Application Logic */,
+				5712472F1BAE61FD00661925 /* Module Interface */,
+				571247301BAE61FD00661925 /* User Interface */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		5712472B1BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5712472C1BAE61FD00661925 /* Interactor */,
+				5712472D1BAE61FD00661925 /* Manager */,
+				5712472E1BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		5712472C1BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5712472D1BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5712472E1BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5712472F1BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		571247301BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				571247311BAE61FD00661925 /* Presenter */,
+				571247321BAE61FD00661925 /* Transition */,
+				571247331BAE61FD00661925 /* View */,
+				571247341BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		571247311BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		571247321BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		571247331BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571247341BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		571247351BAE61FD00661925 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				571247361BAE61FD00661925 /* Application Logic */,
+				5712473A1BAE61FD00661925 /* Module Interface */,
+				5712473B1BAE61FD00661925 /* User Interface */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		571247361BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				571247371BAE61FD00661925 /* Interactor */,
+				571247381BAE61FD00661925 /* Manager */,
+				571247391BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		571247371BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		571247381BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571247391BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5712473A1BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		5712473B1BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5712473C1BAE61FD00661925 /* Presenter */,
+				5712473D1BAE61FD00661925 /* Transition */,
+				5712473E1BAE61FD00661925 /* View */,
+				5712473F1BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		5712473C1BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5712473D1BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		5712473E1BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5712473F1BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		571247401BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				571247411BAE61FD00661925 /* Application Logic */,
+				571247451BAE61FD00661925 /* Module Interface */,
+				571247461BAE61FD00661925 /* User Interface */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		571247411BAE61FD00661925 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				571247421BAE61FD00661925 /* Interactor */,
+				571247431BAE61FD00661925 /* Manager */,
+				571247441BAE61FD00661925 /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		571247421BAE61FD00661925 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		571247431BAE61FD00661925 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		571247441BAE61FD00661925 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		571247451BAE61FD00661925 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		571247461BAE61FD00661925 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				571247471BAE61FD00661925 /* Presenter */,
+				571247481BAE61FD00661925 /* Transition */,
+				571247491BAE61FD00661925 /* View */,
+				5712474A1BAE61FD00661925 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		571247471BAE61FD00661925 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		571247481BAE61FD00661925 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		571247491BAE61FD00661925 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5712474A1BAE61FD00661925 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		571247591BAE6B4900661925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				575162381BD98B72001D6017 /* FBSDKCoreKit.framework */,
+				575162391BD98B72001D6017 /* FBSDKLoginKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		575161F51BD9164C001D6017 /* ManhattanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				575161F61BD9164C001D6017 /* ManhattanUITests.swift */,
+				575161F81BD9164C001D6017 /* Info.plist */,
+			);
+			path = ManhattanUITests;
+			sourceTree = "<group>";
+		};
+		575162311BD968DD001D6017 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				575162341BD9691A001D6017 /* FacebookOptionalPermissions.plist */,
+				575162361BD9693F001D6017 /* FacebookRequiredPermissions.plist */,
+			);
+			path = Facebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,13 +911,32 @@
 			productReference = 571246E41BAE5B6D00661925 /* ManhattanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		575161F31BD9164C001D6017 /* ManhattanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575161FD1BD9164C001D6017 /* Build configuration list for PBXNativeTarget "ManhattanUITests" */;
+			buildPhases = (
+				575161F01BD9164C001D6017 /* Sources */,
+				575161F11BD9164C001D6017 /* Frameworks */,
+				575161F21BD9164C001D6017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575161FA1BD9164C001D6017 /* PBXTargetDependency */,
+			);
+			name = ManhattanUITests;
+			productName = ManhattanUITests;
+			productReference = 575161F41BD9164C001D6017 /* ManhattanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		571246C41BAE5B6D00661925 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Andrew Copp";
 				TargetAttributes = {
 					571246CB1BAE5B6D00661925 = {
@@ -167,6 +944,10 @@
 					};
 					571246E31BAE5B6D00661925 = {
 						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 571246CB1BAE5B6D00661925;
+					};
+					575161F31BD9164C001D6017 = {
+						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 571246CB1BAE5B6D00661925;
 					};
 				};
@@ -186,6 +967,7 @@
 			targets = (
 				571246CB1BAE5B6D00661925 /* Manhattan */,
 				571246E31BAE5B6D00661925 /* ManhattanTests */,
+				575161F31BD9164C001D6017 /* ManhattanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,11 +979,20 @@
 			files = (
 				571246DA1BAE5B6D00661925 /* Main.storyboard in Resources */,
 				571246DF1BAE5B6D00661925 /* LaunchScreen.xib in Resources */,
+				575162351BD9691A001D6017 /* FacebookOptionalPermissions.plist in Resources */,
+				575162371BD9693F001D6017 /* FacebookRequiredPermissions.plist in Resources */,
 				571246DC1BAE5B6D00661925 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		571246E21BAE5B6D00661925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575161F21BD9164C001D6017 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,9 +1006,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				571246D71BAE5B6D00661925 /* ViewController.swift in Sources */,
-				571246D51BAE5B6D00661925 /* Manhattan.xcdatamodeld in Sources */,
-				571246D21BAE5B6D00661925 /* AppDelegate.swift in Sources */,
+				575162261BD94FBC001D6017 /* AuthenticateDataManager.swift in Sources */,
+				5751622E1BD96197001D6017 /* AppDependencies.swift in Sources */,
+				5751622C1BD957C8001D6017 /* AuthenticateInteractorIO.swift in Sources */,
+				5712474B1BAE61FD00661925 /* AppDelegate.swift in Sources */,
+				5751622A1BD95353001D6017 /* AuthenticateWireframe.swift in Sources */,
+				571247611BAE6D0900661925 /* AuthenticateViewController.swift in Sources */,
+				575162221BD94C57001D6017 /* AuthenticatePresenter.swift in Sources */,
+				575162241BD94C71001D6017 /* AuthenticateInteractor.swift in Sources */,
+				575162301BD961D2001D6017 /* RootWireframe.swift in Sources */,
+				5712474C1BAE61FD00661925 /* Manhattan.xcdatamodeld in Sources */,
+				575162281BD952EC001D6017 /* AuthenticateModuleInterface.swift in Sources */,
+				575161FF1BD927A4001D6017 /* AuthenticateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +1029,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		575161F01BD9164C001D6017 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575161F71BD9164C001D6017 /* ManhattanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +1044,11 @@
 			isa = PBXTargetDependency;
 			target = 571246CB1BAE5B6D00661925 /* Manhattan */;
 			targetProxy = 571246E51BAE5B6D00661925 /* PBXContainerItemProxy */;
+		};
+		575161FA1BD9164C001D6017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 571246CB1BAE5B6D00661925 /* Manhattan */;
+			targetProxy = 575161F91BD9164C001D6017 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -280,6 +1093,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,8 +1158,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Manhattan/Frameworks",
+					"/Users/andrewcopp/Downloads/FacebookSDKs-iOS-20150910",
+					"$(PROJECT_DIR)/Manhattan",
+				);
 				INFOPLIST_FILE = Manhattan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.hinge.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,8 +1175,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Manhattan/Frameworks",
+					"/Users/andrewcopp/Downloads/FacebookSDKs-iOS-20150910",
+					"$(PROJECT_DIR)/Manhattan",
+				);
 				INFOPLIST_FILE = Manhattan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.hinge.mobile.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -364,16 +1192,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ManhattanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcopp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Manhattan.app/Manhattan";
 			};
@@ -383,14 +1209,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ManhattanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewcopp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Manhattan.app/Manhattan";
+			};
+			name = Release;
+		};
+		575161FB1BD9164C001D6017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = ManhattanUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewcopp.ManhattanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Manhattan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		575161FC1BD9164C001D6017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ManhattanUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewcopp.ManhattanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Manhattan;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -413,6 +1265,7 @@
 				571246F01BAE5B6D00661925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		571246F11BAE5B6D00661925 /* Build configuration list for PBXNativeTarget "ManhattanTests" */ = {
 			isa = XCConfigurationList;
@@ -421,16 +1274,26 @@
 				571246F31BAE5B6D00661925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575161FD1BD9164C001D6017 /* Build configuration list for PBXNativeTarget "ManhattanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575161FB1BD9164C001D6017 /* Debug */,
+				575161FC1BD9164C001D6017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		571246D31BAE5B6D00661925 /* Manhattan.xcdatamodeld */ = {
+		571246FA1BAE61FD00661925 /* Manhattan.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				571246D41BAE5B6D00661925 /* Manhattan.xcdatamodel */,
+				571246FB1BAE61FD00661925 /* Manhattan.xcdatamodel */,
 			);
-			currentVersion = 571246D41BAE5B6D00661925 /* Manhattan.xcdatamodel */;
+			currentVersion = 571246FB1BAE61FD00661925 /* Manhattan.xcdatamodel */;
 			path = Manhattan.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
